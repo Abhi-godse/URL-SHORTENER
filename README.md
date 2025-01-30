@@ -131,6 +131,6 @@ Contributions are welcome! To get started:
 
 ## 📞 Contact
 
-Your Name - [LinkedIn](https://linkedin.com/in/yourprofile) - your.email@example.com
+Your Name - [LinkedIn](https://www.linkedin.com/in/svabhilash/) - sattaruvenkataabhilash@gmail.com
 
 Project Link: [GitHub Repository](https://github.com/YourUsername/URL-Shortener)
