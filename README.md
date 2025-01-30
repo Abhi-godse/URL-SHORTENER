@@ -1,111 +1,136 @@
-<h1 align="center">DJANGO URL SHORTENER</h1>
-  <p align="center">
-    A simple Django web app for shortening urls.
-    <br />
-    <a href="https://github.com/DebjitPramanick/Django-URL-Shortener">View Demo</a>
-    ·
-    <a href="https://github.com/DebjitPramanick/Django-URL-Shortener/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/DebjitPramanick/Django-URL-Shortener/issues">Request Feature</a>
-  </p>
-</p>
+# URL Shortener using Python
 
+A simple Python web app for shortening URLs. This application allows users to quickly convert long URLs into short, easily shareable links.
 
+## 💻 Demo
+View the live demo here: [View Demo](https://github.com/YourUsername/URL-Shortener)
 
-<!-- TABLE OF CONTENTS -->
+Report a bug or request a feature:  
+[Report Bug](https://github.com/YourUsername/URL-Shortener/issues)  
+[Request Feature](https://github.com/YourUsername/URL-Shortener/issues)
+
+---
+
+## 📑 Table of Contents
+
 <details open="open">
-  <summary>Table of Contents</summary>
+  <summary>Click to expand</summary>
   <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <ul>
+      <li><a href="#built-with">Built With</a></li>
+    </ul>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <ul>
+      <li><a href="#prerequisites">Prerequisites</a></li>
+      <li><a href="#installation">Installation</a></li>
+    </ul>
+    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#contact">Contact</a></li>  </ol>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
 </details>
 
+---
 
+## 📝 About The Project
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+This is a simple, efficient, and lightweight Python-based web application designed to shorten any given URL. It generates a unique short link for long URLs, making sharing and tracking links easier. 
 
-<img src="./screenshots/ss1.png" alt=""/>
-<br>
+![App Screenshot](./screenshots/ss1.png)
 
-This is a simple web app for shortening urls. You can shorten any type of url.
+### 🔧 Built With
+* [Python](https://www.python.org/)
+* [Flask](https://flask.palletsprojects.com/) / [FastAPI](https://fastapi.tiangolo.com/) (Choose the framework you use)
+* [SQLite](https://www.sqlite.org/) (or any other database of your choice)
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+---
 
-### Built With
-* [Django](https://www.djangoproject.com/)
+## ✨ Features
 
+- Shorten long URLs into compact, shareable links
+- Custom alias support (if enabled)
+- Simple, user-friendly interface
+- Click tracking for shortened URLs
+- REST API for programmatic access
+- Database integration for storing shortened links
 
-<!-- GETTING STARTED -->
-## Getting Started
+---
 
-To get a local copy up and running follow these simple example steps.
+## 🚀 Getting Started
 
-### Prerequisites
+Follow these instructions to set up and run the project locally.
 
-This is an example of how to list things you need to use the software and how to install them.
-* [Python3](https://www.python.org/downloads/)
+### 🖥️ Prerequisites
 
-### Installation
+Before you begin, ensure that you have the following installed on your system:
 
-1. Clone the repo
+* [Python 3.x](https://www.python.org/downloads/)
+* [pip](https://pip.pypa.io/en/stable/installation/)
+
+### 🛠️ Installation
+
+1. **Clone the repository**
    ```sh
-   git clone https://github.com/DebjitPramanick/Django-Text-Analyzer.git
+   git clone https://github.com/YourUsername/URL-Shortener.git
    ```
-3. Install Django
+2. **Navigate to the project directory**
    ```sh
-   pip  install  django
+   cd URL-Shortener
    ```
-4. Open the project folder
-5. Now type
-    ```sh
-   cd urlshortener
+3. **Create a virtual environment (optional but recommended)**
+   ```sh
+   python -m venv venv
+   source venv/bin/activate  # On Windows use: venv\Scripts\activate
    ```
-5. Now type
-    ```sh
-   python3 manage.py runserver
+4. **Install dependencies**
+   ```sh
+   pip install -r requirements.txt
+   ```
+5. **Run the application**
+   ```sh
+   python app.py  # Flask
+   # OR
+   uvicorn app:app --reload  # FastAPI
    ```
 
+---
 
+## 🛠️ Usage
 
-<!-- ROADMAP -->
-## Roadmap
+1. Open your browser and go to `http://127.0.0.1:5000/`
+2. Enter a long URL in the input box
+3. Click "Shorten" to generate a short URL
+4. Copy and share the shortened URL
 
-See the [open issues](https://github.com/DebjitPramanick/Django-URL-Shortener/issues) for a list of proposed features (and known issues).
+---
 
+## 🛣️ Roadmap
 
+- [ ] Add a user authentication system
+- [ ] Implement a QR code generator for short links
+- [ ] Support custom URL expiration times
+- [ ] Add analytics dashboard for tracking clicks
+- [ ] Deploy to a cloud platform
 
-<!-- CONTRIBUTING -->
-## Contributing
+---
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+## 🤝 Contributing
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
+Contributions are welcome! To get started:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-name`)
+3. Commit your changes (`git commit -m 'Add a new feature'`)
+4. Push to the branch (`git push origin feature-name`)
 5. Open a Pull Request
 
+---
 
-<!-- CONTACT -->
-## Contact
+## 📞 Contact
 
-Twitter - [@P_Debjit](https://twitter.com/P_Debjit) 
-<br>
-LinkedIn - [Debjit Pramanick](https://www.linkedin.com/in/debjit-pramanick-7a6a971b1/)
+Your Name - [LinkedIn](https://linkedin.com/in/yourprofile) - your.email@example.com
 
-Project Link: [https://github.com/DebjitPramanick/Django-Text-Analyzer](https://github.com/DebjitPramanick/Django-Text-Analyzer)
+Project Link: [GitHub Repository](https://github.com/YourUsername/URL-Shortener)
